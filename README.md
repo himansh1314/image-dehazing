@@ -1,5 +1,5 @@
 # Deep Generative Model for Single Image De-hazing on Embedded Platform
-## Code base for our paper titled "Deep Generative Model for Single Image De-Hazing on Embedded Platform", 2020 IEEE Region 10 Symposium, Dhaka, Bangladesh., Ba
+## Code base for our paper titled "Deep Generative Model for Single Image De-Hazing on Embedded Platform", 2020 IEEE Region 10 Symposium, Dhaka, Bangladesh.
 ## Requirements
 1. Tensorflow-gpu v2
 2. Pillow(PIL)
