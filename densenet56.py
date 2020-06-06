@@ -87,7 +87,3 @@ def DenseNet():
     model.summary()
     plot_model(model)
     return model
-# from densenet_keras import create_tiramisu
-# model = create_tiramisu(3, nb_layers_per_block=4, p=0.2, wd=1e-4)
-# model.summary()
-# plot_model(model, show_shapes = True)

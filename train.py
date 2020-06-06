@@ -151,14 +151,8 @@ def generator_loss(disc_generated_output, gen_output, target):
     """Defines generator loss function containing wasserstein loss and L1 loss"""
     gan_loss = wasserstein_loss(-tf.ones_like(disc_generated_output), disc_generated_output)
 
-  # content loss
-  #cont_loss = content_loss(target, gen_output)
-
   # mean absolute error
     l1_loss = tf.reduce_mean(tf.abs(target - gen_output))  
-
-  # Total variation loss
-  #tv_loss = tf.image.total_variation(gen_output)
 
     total_gen_loss = gan_loss + (LAMBDA * l1_loss)
 

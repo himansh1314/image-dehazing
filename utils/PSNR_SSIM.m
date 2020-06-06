@@ -5,10 +5,11 @@ cd('C:\Users\Raghu\Downloads\PSNR_FSIM\');
 % dir testingImages
 list1 = dir('groundtruth_ohaze');
 list1 = {list1.name};
+len_lis = shape(list1)
 ssim_ans = [];
 psnr_ans = [];
 %%Enter the directories of groundtruth and predicted images.
-for i= 3: 1: 10
+for i= 3: 1: len_lis(2) - 2
  groundtruthlocation = strcat('TesingImage_location', list1(i));
     predictedlocation = strcat('PredictedImage Location', list1(i));
     
