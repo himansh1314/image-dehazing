@@ -1,11 +1,11 @@
 clc
 close all
 close all
-cd('C:\Users\Raghu\Downloads\PSNR_FSIM\');
+cd('Location of ground truth and generated images');
 % dir testingImages
 list1 = dir('groundtruth_ohaze');
 list1 = {list1.name};
-len_lis = shape(list1)
+len_lis = size(list1)
 ssim_ans = [];
 psnr_ans = [];
 %%Enter the directories of groundtruth and predicted images.

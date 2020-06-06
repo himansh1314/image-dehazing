@@ -101,7 +101,4 @@ for i in range(0,46):
     img9_gt.save('augmented_dataset/GT/outdoor_{}_9.png'.format(i))
     #original_hazy_side = tf.image.crop_to_bounding_box(image_hazy, 0,0,0.5,0.5)
     
-# img = image.load_img('GT/01_outdoor_GT.jpg')
-# img = image.img_to_array(img)
-# print(img.shape)
     
